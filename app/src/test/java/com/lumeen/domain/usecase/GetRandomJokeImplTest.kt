@@ -48,5 +48,4 @@ class GetRandomJokeImplTest {
         // assert
         assertThat(result).isEqualTo(GetJokeError.NetworkError)
     }
-
 }

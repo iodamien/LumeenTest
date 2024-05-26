@@ -6,5 +6,3 @@ sealed class GetJokeError {
     data class UnknownError(val message: String?): GetJokeError()
     data object NetworkError: GetJokeError()
 }
-
-
