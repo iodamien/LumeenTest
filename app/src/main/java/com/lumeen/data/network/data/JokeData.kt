@@ -1,7 +1,5 @@
 package com.lumeen.data.network.data
 
-import android.util.Log
-
 sealed class JokeData {
     data class Single(
         override val id: Long,
