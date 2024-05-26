@@ -1,6 +1,12 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.room)
+    alias(libs.plugins.ksp)
+}
+
+room {
+    schemaDirectory("$projectDir/schemas")
 }
 
 android {
@@ -61,7 +67,13 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.bundles.room)
+    implementation(libs.bundles.retrofit)
+
     testImplementation(libs.junit)
+    testImplementation(libs.bundles.test.mockk)
+    testImplementation(libs.bundles.test.truth)
+    testImplementation(libs.kotlinx.coroutines.test)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
@@ -69,7 +81,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    testImplementation(libs.bundles.test.mockk)
-    testImplementation(libs.bundles.test.truth)
-    testImplementation(libs.kotlinx.coroutines.test)
+    annotationProcessor(libs.room.compiler)
+    ksp(libs.room.compiler)
+
 }
