@@ -1,4 +1,4 @@
-package com.lumeen.ui.theme
+package com.lueem.kit.designkit.theme
 
 import androidx.compose.ui.graphics.Color
 

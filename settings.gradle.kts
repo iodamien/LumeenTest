@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "LumeenTest"
 include(":app")
- 
+include(":kit:designkit")
