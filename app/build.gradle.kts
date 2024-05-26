@@ -68,4 +68,8 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    testImplementation(libs.bundles.test.mockk)
+    testImplementation(libs.bundles.test.truth)
+    testImplementation(libs.kotlinx.coroutines.test)
 }
