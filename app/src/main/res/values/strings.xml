@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">LumeenTest</string>
+    <string name="app_name">LumeenApp</string>
+    <string name="delete_joke">Delete joke</string>
+    <string name="favorite">Favorite</string>
+
+    <string name="error_client">Client error: %d occurred. Try again or contact the support</string>
+    <string name="error_server">Server error: %d occurred. Try again or contact the support</string>
+    <string name="network_error">We have some network error. Please check your connection.</string>
+    <string name="unknown_error">An error occurred: %s Try again or contact the support</string>
+
+    <string name="favorite_jokes">Favorite Jokes</string>
+    <string name="random_joke">Random Joke</string>
 </resources>

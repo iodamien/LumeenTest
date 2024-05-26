@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.lueem"
+    namespace = "com.lumeen.kit.designkit"
     compileSdk = 34
 
     defaultConfig {

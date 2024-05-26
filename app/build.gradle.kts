@@ -52,6 +52,8 @@ android {
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "/META-INF/LICENSE.md"
+            excludes += "/META-INF/LICENSE-notice.md"
         }
     }
 }
@@ -71,7 +73,10 @@ dependencies {
     implementation(libs.bundles.room)
     implementation(libs.bundles.retrofit)
     implementation(libs.hilt)
+    implementation(libs.compose.navigation)
+    implementation(libs.hilt.compose)
 
+    testImplementation(libs.test.android.arch)
     testImplementation(libs.junit)
     testImplementation(libs.bundles.test.mockk)
     testImplementation(libs.bundles.test.truth)
@@ -84,7 +89,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     annotationProcessor(libs.room.compiler)
-    annotationProcessor(libs.hilt.compiler)
-    ksp(libs.room.compiler)
 
+    ksp(libs.hilt.compiler)
+    ksp(libs.room.compiler)
 }
