@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.room)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt)
 }
 
 room {
@@ -69,6 +70,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.bundles.room)
     implementation(libs.bundles.retrofit)
+    implementation(libs.hilt)
 
     testImplementation(libs.junit)
     testImplementation(libs.bundles.test.mockk)
@@ -82,6 +84,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     annotationProcessor(libs.room.compiler)
+    annotationProcessor(libs.hilt.compiler)
     ksp(libs.room.compiler)
 
 }

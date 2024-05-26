@@ -1,6 +1,5 @@
 package com.lumeen.data.repository
 
-import android.net.http.NetworkException
 import com.google.common.truth.Truth.assertThat
 import com.lumeen.data.database.dao.JokeDao
 import com.lumeen.data.network.JokeService
